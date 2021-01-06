@@ -8,6 +8,7 @@
 
 body {
     overflow-x: hidden;
+    background-color: burlywood;
 }
 
 /*HEADER*/
@@ -155,12 +156,6 @@ h2 {
     padding-bottom: 2vh;
 }
 
-#about {
-    background-color: burlywood;
-
-
-}
-
 .container-about {
     margin: 7vh;
 }
@@ -267,7 +262,7 @@ h2 {
 
 /*KONTAKT*/
 .contact {
-    background-color: black;
+    background-color: rgb(59, 56, 51);
     padding: 5vh;
     text-align: center;
     color: white;
@@ -278,6 +273,9 @@ h2 {
 .contact textarea {
     width: 80%;
     margin: 2vh;
+    background-color: transparent;
+    border: solid 2px white;
+    padding: 1vh;
 }
 
 .contact input {
@@ -290,7 +288,7 @@ h2 {
 
 .contact button {
     height: 6vh;
-    background-color: black;
+    background-color: rgb(59, 56, 51);
     text-transform: uppercase;
     color: white;
 }
@@ -310,6 +308,21 @@ h2 {
     line-height: 4vh;
 }
 
+@media(min-width:1000px) {
+
+    .contact input,
+    .contact button,
+    .contact textarea {
+        width: 50%;
+        transition: 0.3s;
+        color: white;
+    }
+
+    .contact button:hover {
+        transform: scale(1.1);
+    }
+}
+
 @media(min-width:768px) {
     iframe {
         width: 70vw;
@@ -322,6 +335,6 @@ footer {
     text-align: center;
     padding: 1vh;
     font-size: 2vh;
-    background-color: black;
+    background-color: rgb(39, 38, 37);
     color: white;
 }
